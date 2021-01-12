@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #97CFD9;
+    min-height: 100vh;
+}
+
+.container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    border: 10px solid #000;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "display display display display"
+    "add subtract multiply divide"
+    "four five six AC"
+    "seven eight nine clear"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+.pad-btn{
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    background: #E6E6E6;
+    color: #000;
+    border: 1px solid #C5C8C8;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.pad-btn:hover{
+    border: 1px solid gray;
+}
+
+.pad-btn:active{
+    color: gray !important;
+}
+
+#AC, #clear{
+    background-color: #FF1919;
+    color: #fff;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #dot{
+    background: #FFFFFF;
+}
+
+#display{
+    grid-area: display;
+    background: #252525;
+    border: 1px solid #545D6C;
+    text-align: right;
+    font-size: 20px;
+}
+
+#display input{
+    width: 90%;
+    color: #fff;
+    text-align: right;
+    background: #252525;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+input, .total, .me{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.total{
+    color: yellow;
+    margin-right: 10px;
+}
+
+#zero{
+    grid-area: zero;
+    width: 100%;
+}
+
+#equals{
+    background-color: #004466;
+    height: 100%;
+    color: #fff;
+    grid-area: equals;
+}
+
+#decimal{
+    grid-area: decimal;
+}
+
+#AC{
+    grid-area: AC;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#add{
+    grid-area: add;
+}
+
+#subtract{
+    grid-area: subtract;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+.me{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.me a{
+    text-decoration: none;
+    color: #004466;
+}
