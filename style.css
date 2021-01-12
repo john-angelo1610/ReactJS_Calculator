@@ -36,8 +36,9 @@ body{
 .pad-btn{
     display: grid;
     place-items: center;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
+    width: 100%;
     background: #E6E6E6;
     color: #000;
     border: 1px solid #C5C8C8;
@@ -92,12 +93,6 @@ input, .total, .me{
     color: yellow;
     margin-right: 10px;
 }
-
-#zero{
-    grid-area: zero;
-    width: 100%;
-}
-
 #equals{
     background-color: #004466;
     height: 100%;
@@ -105,41 +100,20 @@ input, .total, .me{
     grid-area: equals;
 }
 
-#decimal{
-    grid-area: decimal;
-}
-
-#AC{
-    grid-area: AC;
-}
-
-#clear{
-    grid-area: clear;
-}
-
-#add{
-    grid-area: add;
-}
-
-#subtract{
-    grid-area: subtract;
-}
-
-#multiply{
-    grid-area: multiply;
-}
-
-#one{
-    grid-area: one;
-}
-
-#two{
-    grid-area: two;
-}
+#decimal{grid-area: decimal;}
+#AC{grid-area: AC;}
+#clear{grid-area: clear;}
+#add{grid-area: add;}
+#subtract{grid-area: subtract;}
+#multiply{grid-area: multiply;}
+#one{grid-area: one;}
+#two{grid-area: two;}
+#zero{grid-area: zero;}
 
 .me{
     text-align: center;
     padding-top: 30px;
+    line-height: 1.5;
 }
 
 .me a{
