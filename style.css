@@ -110,13 +110,13 @@ input, .total, .me{
 #two{grid-area: two;}
 #zero{grid-area: zero;}
 
-.me{
+footer{
     text-align: center;
     padding-top: 30px;
     line-height: 1.5;
 }
 
-.me a{
+footer a{
     text-decoration: none;
     color: #004466;
 }
